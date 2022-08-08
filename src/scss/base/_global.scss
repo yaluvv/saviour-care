@@ -35,24 +35,3 @@ li {
     max-width: 1230px;
     padding: 0 $padding-container;
 }
-
-.logo {
-    font-weight: 700;
-    font-size: 2.4rem;
-    line-height: 3rem;
-    color: $primary1;
-    white-space: nowrap;
-}
-
-.nav {
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-    color: $nav-text-color;
-
-    &__link {
-        white-space: nowrap;
-        color: inherit;
-        cursor: pointer;
-    }
-}
