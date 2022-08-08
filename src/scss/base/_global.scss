@@ -3,6 +3,10 @@
 ::after {
     box-sizing: border-box;
 }
+html {
+    font-size: 10px;
+    line-height: 10px;
+}
 
 h1,
 h2,
@@ -29,6 +33,5 @@ li {
 .container {
     margin: 0 auto;
     max-width: 1230px;
-    background-color: gray;
     padding: 0 $padding-container;
 }

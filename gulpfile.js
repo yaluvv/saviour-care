@@ -11,12 +11,12 @@ const del = require('del');
 function browsersync() {
     browserSync.init({
         server: {
-            baseDir: 'app/'
+            baseDir: 'src/'
         }
     });
 }
 function images() {
-    return src('app/images/**/*')
+    return src('src/images/**/*')
         .pipe(imagemin([
             imagemin.gifsicle({ interlaced: true }),
             imagemin.mozjpeg({ quality: 75, progressive: true }),
@@ -33,29 +33,29 @@ function images() {
 }
 
 function styles() {
-    return src('app/scss/**/*.scss')
+    return src('src/scss/**/*.scss')
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
             grid: true
         }))
-        .pipe(dest('app/css'))
+        .pipe(dest('src/css'))
         .pipe(browserSync.stream())
 }
 
 
 function scripts() {
-    return src('app/js/main.js')
+    return src('src/js/main.js')
         .pipe(concat('main.min.js'))
         .pipe(uglify())
-        .pipe(dest('app/js'))
+        .pipe(dest('src/js'))
         .pipe(browserSync.stream())
 }
 function watching() {
-    watch(['app/scss/**/*.scss'], styles)
-    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts)
-    watch(['app/*.html']).on('change', browserSync.reload);
+    watch(['src/scss/**/*.scss'], styles)
+    watch(['src/js/**/*.js', '!src/js/main.min.js'], scripts)
+    watch(['src/*.html']).on('change', browserSync.reload);
 }
 function cleanDist() {
     return del('dist')
@@ -63,11 +63,11 @@ function cleanDist() {
 
 function build() {
     return src([
-        'app/css/style.min.css',
-        'app/fonts/**/*',
-        'app/js/main.min.js',
-        'app/*.html'
-    ], { base: 'app' })
+        'src/css/style.min.css',
+        'src/fonts/**/*',
+        'src/js/main.min.js',
+        'src/*.html'
+    ], { base: 'src' })
         .pipe(dest('dist'))
 }
 exports.styles = styles;
