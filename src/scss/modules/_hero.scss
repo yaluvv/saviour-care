@@ -1,0 +1,32 @@
+.hero {
+    padding: 124px 0 108px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img-block {
+        max-width: 769px;
+        margin-left: 15px;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__info-block {
+        max-width: 605px;
+    }
+    &__title {
+        color: $hero-title-color;
+        margin-bottom: 26.5px;
+    }
+    &__desc-text {
+        max-width: 511px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 1.9rem;
+        line-height: 2.7rem;
+        letter-spacing: 0.02em;
+        color: $hero-subText-color;
+        margin-bottom: 80px;
+    }
+}

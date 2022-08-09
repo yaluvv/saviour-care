@@ -1,9 +1,12 @@
 @import "./vars";
-@import "./fonts";
+@import "./base/fonts";
 @import "./base/normalize";
 @import "./base/global";
 
 @import "./common/logo";
 @import "./common/nav";
+@import "./common/btn";
+@import "./common/section-title";
 
 @import "./modules/header";
+@import "./modules/hero";
