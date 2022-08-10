@@ -1,16 +1,6 @@
 .hero {
     padding: 124px 0 108px;
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 55px;
-        background: url(/images/hero/element.svg);
-        width: 82px;
-        height: 115px;
-    }
+    background: url(/images/hero/element.svg) no-repeat left top 30px;
     &__row {
         display: flex;
         justify-content: space-between;
