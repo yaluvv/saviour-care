@@ -1,0 +1,33 @@
+.section-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__title {
+        color: #462e6a;
+        margin-bottom: 63px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 56px;
+            height: 2px;
+            background: #000000;
+            border-radius: 10px;
+            bottom: -32px;
+            position: absolute;
+        }
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        color: #7d7987;
+        margin-bottom: 37px;
+    }
+}
