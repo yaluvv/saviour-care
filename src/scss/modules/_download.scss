@@ -1,0 +1,48 @@
+.download {
+    padding: 100px 0 120px;
+
+    &__inner {
+        flex-direction: row-reverse;
+    }
+    &__info-block {
+        max-width: 478px;
+        margin-right: 30px;
+        position: relative;
+    }
+    &__img-box {
+        max-width: 665px;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 937px;
+            height: 671px;
+            background: url(../../images/download/bg-img.svg) no-repeat right;
+            background-position: inherit;
+            left: 190px;
+            top: 4px;
+            position: absolute;
+            z-index: -10;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        transition: all 0.4s linear;
+
+        span {
+            margin-left: 14px;
+            transition: all 0.4s linear;
+        }
+        &:hover svg path {
+            fill: $white;
+            transition: all 0.4s linear;
+        }
+    }
+}
