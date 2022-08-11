@@ -41,8 +41,8 @@
     }
     &__items {
         display: grid;
-        grid-template-columns: repeat(3, minmax(250px, 350px));
-        grid-template-rows: repeat(2, 354px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 34px;
         margin-bottom: 69px;
         position: relative;
