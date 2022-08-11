@@ -1,10 +1,19 @@
 .hero {
     padding: 124px 0 108px;
-    background: url(/images/hero/element.svg) no-repeat left top 30px;
     &__row {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        &::after {
+            content: "";
+            background: url(../../images/hero/element.svg) no-repeat;
+            width: 131px;
+            height: 115px;
+            position: absolute;
+            left: -115px;
+            bottom: 90%;
+        }
     }
     &__img-block {
         max-width: 769px;
@@ -19,6 +28,7 @@
     &__title {
         color: $hero-title-color;
         margin-bottom: 26.5px;
+        position: relative;
     }
     &__desc-text {
         max-width: 511px;
