@@ -71,11 +71,4 @@
             z-index: -2;
         }
     }
-    &__btn {
-        transition: all 0.4s ease;
-        &:hover {
-            background: $primary4;
-            color: $white;
-        }
-    }
 }
