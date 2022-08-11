@@ -9,7 +9,7 @@
         align-items: flex-start;
     }
     &__title {
-        color: #462e6a;
+        color: $title-text-color;
         margin-bottom: 63px;
         position: relative;
 
@@ -17,7 +17,7 @@
             content: "";
             width: 56px;
             height: 2px;
-            background: #000000;
+            background: $black;
             border-radius: 10px;
             bottom: -32px;
             position: absolute;
@@ -27,7 +27,7 @@
         font-weight: 300;
         font-size: 1.8rem;
         line-height: 3rem;
-        color: #7d7987;
+        color: $sub-text-color;
         margin-bottom: 37px;
     }
 }
