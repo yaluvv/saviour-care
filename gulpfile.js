@@ -36,8 +36,6 @@ function styles() {
     return src('src/scss/**/*.scss')
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
-        .pipe(scss({ outputStyle: 'expanded' }))
-        .pipe(concat('style.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
             grid: true
