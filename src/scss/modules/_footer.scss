@@ -1,0 +1,16 @@
+.footer {
+    padding: 20px 0 20px;
+    background: $primary4;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copy {
+        margin-left: 20px;
+        color: $white;
+        font-size: 2rem;
+    }
+}

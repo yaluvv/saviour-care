@@ -16,5 +16,13 @@
         &:hover {
             color: $primary4;
         }
+        &--light {
+            color: $white;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $black;
+            }
+        }
     }
 }
