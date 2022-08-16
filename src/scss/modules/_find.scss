@@ -4,6 +4,10 @@
     &__img-box {
         max-width: 665px;
 
+        @media (max-width: 950px) {
+            max-width: 450px;
+        }
+
         img {
             width: 100%;
         }

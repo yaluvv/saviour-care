@@ -38,6 +38,10 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: $primary2;
+
+        @media (max-width: 820px) {
+            font-size: 1.7rem;
+        }
     }
     &__items {
         display: grid;
@@ -70,5 +74,17 @@
             transform: translateY(-50%);
             z-index: -2;
         }
+
+        @media (max-width: 950px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 630px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 950px) {
+        padding: 100px 0 90px;
     }
 }

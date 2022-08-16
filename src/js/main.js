@@ -16,5 +16,6 @@ closePopupBtn.addEventListener('click', () => {
 popup.addEventListener('click', (e) => {
     if (e.target == popup) {
         popup.classList.remove('popup--active')
+        body.classList.remove('scroll-hidden')
     }
 })
