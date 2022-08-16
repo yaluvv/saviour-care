@@ -6,11 +6,23 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
     }
 
     &__copy {
         margin-left: 20px;
         color: $white;
         font-size: 2rem;
+
+        @media (max-width: 576px) {
+            margin-top: 20px;
+            margin-left: 0;
+        }
+        @media (max-width: 425px) {
+            font-size: 1.6rem;
+        }
     }
 }

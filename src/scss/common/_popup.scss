@@ -26,6 +26,11 @@
         padding: 100px 15px 110px 15px;
         position: relative;
         animation: animPopup 1s;
+
+        @media (max-width: 650px) {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &--active {
@@ -33,7 +38,7 @@
     }
 
     &__form {
-        width: 40%;
+        width: 250px;
         display: flex;
         flex-direction: column;
     }
@@ -78,5 +83,9 @@
         &:hover {
             opacity: 0.6;
         }
+    }
+
+    @media (max-width: 650px) {
+        padding: 0;
     }
 }

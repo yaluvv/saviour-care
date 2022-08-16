@@ -3,11 +3,19 @@
 
     &__inner {
         flex-direction: row-reverse;
+
+        @media (max-width: 950px) {
+            flex-direction: column;
+        }
     }
     &__info-block {
         max-width: 478px;
         margin-right: 30px;
         position: relative;
+
+        @media (max-width: 950px) {
+            max-width: 450px;
+        }
     }
     &__img-box {
         max-width: 665px;
@@ -48,5 +56,9 @@
             fill: $white;
             transition: all 0.4s linear;
         }
+    }
+
+    @media (max-width: 950px) {
+        padding: 100px 0 70px;
     }
 }
