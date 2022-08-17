@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    padding: 30px;
+    padding: 30px 0 30px;
     background-color: $white;
     left: 0;
     top: 0;
@@ -35,7 +35,7 @@
             position: fixed;
             z-index: 155;
             overflow-x: hidden;
-            animation: animatePopup 0.5s;
+            animation: animateBurger 0.5s;
         }
     }
 
