@@ -27,10 +27,10 @@
         }
     }
 
-    &--active .burger-menu__open {
+    &--active &__open {
         display: none;
     }
-    &--active .burger-menu__close {
+    &--active &__close {
         display: block;
     }
 }

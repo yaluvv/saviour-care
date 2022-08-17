@@ -61,3 +61,15 @@ for (let i = 0; i < lengthLinks; i++) {
     })
 }
 
+headerNavLinks.forEach(anc => anc.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const id = anc.getAttribute('href')
+    const elem = document.querySelector(id);
+
+
+    window.scroll({
+        top: elem.offsetTop,
+        behavior: "smooth"
+    })
+}))
