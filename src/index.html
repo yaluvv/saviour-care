@@ -18,31 +18,62 @@
                     <span class="header__logo-title logo__title">Saviour Care</span>
                 </a>
                 <nav class="header__nav nav">
-                    <ul class="header__nav-items nav__ihtems">
+                    <ul class="header__nav-items nav__items">
                         <li class="header__nav-item nav__item">
-                            <a class="header__nav-link header__nav-link--active nav__link">Home</a>
+                            <a href="#main" class="header__nav-link nav__link header__nav-link--active">Home</a>
                         </li>
                         <li class="header__nav-item nav__item">
-                            <a class="header__nav-link nav__link">Find a doctor</a>
+                            <a href="#find" class="header__nav-link nav__link">Find a doctor</a>
                         </li>
                         <li class="header__nav-item nav__item">
-                            <a class="header__nav-link nav__link">Apps</a>
+                            <a href="#services" class="header__nav-link nav__link">Apps</a>
                         </li>
                         <li class="header__nav-item nav__item">
-                            <a class="header__nav-link nav__link">Testimonials</a>
+                            <a href="#leading" class="header__nav-link nav__link">Testimonials</a>
                         </li>
                         <li class="header__nav-item nav__item">
-                            <a class="header__nav-link nav__link">About us</a>
+                            <a href="#download" class="header__nav-link nav__link">About us</a>
                         </li>
                     </ul>
                 </nav>
             </div>
 
         </div>
+
+        <div class="burger-menu">
+            <button class="burger-menu__open" type="button" aria-label="open menu">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
+                    <path d="M7.94977 11.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path d="M7.94977 23.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path d="M7.94977 35.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <button class="burger-menu__close" type="button" aria-label="close menu">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42px"
+                        height="42px" viewBox="0 0 42 42" version="1.1">
+                        <path
+                            style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;"
+                            d="M 7 7 L 25 25 " transform="matrix(1.3125,0,0,1.3125,0,0)"></path>
+                        <path
+                            style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;"
+                            d="M 7 25 L 25 7 " transform="matrix(1.3125,0,0,1.3125,0,0)"></path>
+                    </svg>
+
+                </span>
+            </button>
+            <span>
+
+            </span>
+        </div>
     </header>
 
     <main class="main">
-        <section class="hero">
+        <section id="main" class="hero">
             <div class="container">
                 <div class="hero__row">
                     <div class="hero__info-block">
@@ -57,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section id="services" class="services">
             <div class="container">
                 <div class="services__inner">
                     <div class="services__info-block">
@@ -109,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="leading">
+        <section id="leading" class="leading">
             <div class="container">
                 <div class="leading__inner section-items">
                     <div class="leading__img-box section-items__img-block">
@@ -127,7 +158,7 @@
                 </div>
             </div>
         </section>
-        <section class="download">
+        <section id="download" class="download">
             <div class="container">
                 <div class="download__inner section-items">
                     <div class="download__img-box section-items__img-block">
@@ -155,7 +186,7 @@
                 </div>
             </div>
         </section>
-        <section class="find">
+        <section id="find" class="find">
             <div class="container">
                 <div class="find__inner section-items">
                     <div class="find__img-box section-items__img-block">
@@ -172,7 +203,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="container">
             <div class="footer__row">
                 <a href="#" class="footer__logo logo">

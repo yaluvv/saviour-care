@@ -1,0 +1,36 @@
+@keyframes animatePopup {
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+.burger-menu {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 200;
+
+    &__open,
+    &__close {
+        display: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__open {
+        @media (max-width: 860px) {
+            display: block;
+        }
+    }
+
+    &--active .burger-menu__open {
+        display: none;
+    }
+    &--active .burger-menu__close {
+        display: block;
+    }
+}
